@@ -9,6 +9,16 @@ namespace DataLayer.Libs.Helpers.Net
     public delegate void DownloadListener(string response);
     public class SimpleConnector
     {
+        /**
+         * Method GET
+         */
+        public const string METHOD_GET = "GET";
+
+        /**
+         * Method POST
+         */
+        public const string METHOD_POST = "POST";
+
         public List<KeyValuePair<string, string>> ExtraParams;
         protected Dictionary<string, string> Params;
 
